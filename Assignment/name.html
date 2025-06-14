@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form with Alert Function</title>
+</head>
+<body>
+
+  <h2>User Form</h2>
+
+  <form onsubmit="displayNames(); return false;">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" required><br><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" required><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    function displayNames() {
+      let firstName = document.getElementById("firstName").value;
+      let lastName = document.getElementById("lastName").value;
+      alert("First Name: " + firstName + "\nLast Name: " + lastName);
+    }
+  </script>
+
+</body>
+</html>

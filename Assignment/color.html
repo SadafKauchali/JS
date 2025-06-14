@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Background Color</title>
+  <script>
+    function changeBackgroundColor() {
+      const colors = ["lightblue", "lightgreen", "pink", "orange", "yellow", "lavender", "skyblue"];
+      const randomIndex = Math.floor(Math.random() * colors.length);
+      document.body.style.backgroundColor = colors[randomIndex];
+    }
+  </script>
+</head>
+<body onload="changeBackgroundColor()">
+
+</body>
+</html>
